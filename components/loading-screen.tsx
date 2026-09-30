@@ -22,12 +22,12 @@ export function LoadingScreen() {
       >
         <div className="relative flex h-16 w-16 items-center justify-center">
           <div className="absolute inset-0 rounded-full border border-white/10" />
-          <Loader2 className="h-8 w-8 animate-spin text-[#7BB7D1]" strokeWidth={1.5} />
+          <Loader2 className="h-8 w-8 animate-spin text-[#ffffff]" strokeWidth={1.5} />
         </div>
 
         <div className="flex flex-col items-center gap-2 text-center">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4 text-[#7BB7D1]" strokeWidth={1.5} />
+            <ShieldCheck className="h-4 w-4 text-[#ffffff]" strokeWidth={1.5} />
             <p className="text-sm font-medium tracking-wide text-white/90">
               Verifying secure connection...
             </p>
@@ -47,7 +47,7 @@ export function LoadingScreen() {
             initial={{ x: "-100%" }}
             animate={{ x: "100%" }}
             transition={{ duration: 1.4, ease: EASE, repeat: Infinity }}
-            className="h-full w-1/2 bg-[#7BB7D1]"
+            className="h-full w-1/2 bg-[#ffffff]"
           />
         </div>
       </motion.div>

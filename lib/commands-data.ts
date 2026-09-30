@@ -94,3 +94,5 @@ export const COMMANDS: Command[] = [
     ["vcbanned", "None", "list members barred from voice."],
     ["shush", "<user>", "toggle message deletion for a member."],
     ["handle", "None", "toggle channel handling."],
+  ]),
+]
