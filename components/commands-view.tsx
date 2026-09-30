@@ -16,11 +16,11 @@ function CommandCard({ command }: { command: Command }) {
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.45, ease: EASE }}
       whileHover={{ y: -4 }}
-      className="group flex flex-col gap-4 rounded-xl border border-white/5 bg-[#121212] p-5 transition-colors duration-200 ease-in-out hover:border-[#7BB7D1]/40"
+      className="group flex flex-col gap-4 rounded-xl border border-white/5 bg-[#121212] p-5 transition-colors duration-200 ease-in-out hover:border-[#ffffff]/40"
     >
       <div className="flex items-center gap-2">
         <Terminal
-          className="h-4 w-4 text-white/30 transition-colors duration-200 ease-in-out group-hover:text-[#7BB7D1]"
+          className="h-4 w-4 text-white/30 transition-colors duration-200 ease-in-out group-hover:text-[#ffffff]"
           strokeWidth={1.5}
         />
         <h3 className="font-mono text-base font-bold text-white">
@@ -33,7 +33,7 @@ function CommandCard({ command }: { command: Command }) {
       <div className="mt-auto flex flex-col gap-2 border-t border-white/5 pt-4">
         <div className="flex items-start gap-2 text-xs">
           <span className="shrink-0 font-medium text-white/40">Arguments:</span>
-          <code className="font-mono text-[#7BB7D1]">{command.args}</code>
+          <code className="font-mono text-[#ffffff]">{command.args}</code>
         </div>
         <div className="flex items-center gap-2 text-xs">
           <span className="shrink-0 font-medium text-white/40">Access:</span>
@@ -87,7 +87,7 @@ export function CommandsView() {
             {active === cat && (
               <motion.span
                 layoutId="active-pill"
-                className="absolute inset-0 rounded-full bg-[#7BB7D1]"
+                className="absolute inset-0 rounded-full bg-[#ffffff]"
                 transition={{ duration: 0.4, ease: EASE }}
               />
             )}

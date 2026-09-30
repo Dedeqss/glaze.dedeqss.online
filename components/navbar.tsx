@@ -33,7 +33,7 @@ export function Navbar({
               className="h-full w-full object-cover"
             />
           </span>
-          <span className="text-sm font-bold tracking-[0.25em] text-[#7BB7D1]">
+          <span className="text-sm font-bold tracking-[0.25em] text-[#ffffff]">
             GLAZE
           </span>
         </button>
@@ -43,7 +43,7 @@ export function Navbar({
             onClick={() => onNavigate("commands")}
             className={`relative flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200 ease-in-out ${
               view === "commands"
-                ? "text-[#7BB7D1]"
+                ? "text-[#ffffff]"
                 : "text-white/60 hover:text-white"
             }`}
           >
@@ -52,7 +52,7 @@ export function Navbar({
             {view === "commands" && (
               <motion.span
                 layoutId="nav-underline"
-                className="absolute inset-x-2 -bottom-[1px] h-px bg-[#7BB7D1]"
+                className="absolute inset-x-2 -bottom-[1px] h-px bg-[#ffffff]"
                 transition={{ duration: 0.4, ease: EASE }}
               />
             )}

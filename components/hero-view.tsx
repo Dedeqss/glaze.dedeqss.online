@@ -40,7 +40,7 @@ function RotatingWord() {
   const word = ROTATING_WORDS[index]
 
   return (
-    <span className="relative inline-block align-baseline text-[#7BB7D1]">
+    <span className="relative inline-block align-baseline text-[#ffffff]">
       {/* invisible sizer keeps layout width stable to the widest word */}
       <span aria-hidden="true" className="invisible whitespace-nowrap">
         supremacy
@@ -67,7 +67,7 @@ function RotatingWord() {
         aria-hidden="true"
         animate={{ scaleX: [0.4, 1, 0.4], opacity: [0.45, 1, 0.45] }}
         transition={{ duration: 2.6, ease: "easeInOut", repeat: Infinity }}
-        className="absolute -bottom-1 left-0 h-[3px] w-full origin-left rounded-full bg-[#7BB7D1]"
+        className="absolute -bottom-1 left-0 h-[3px] w-full origin-left rounded-full bg-[#ffffff]"
       />
     </span>
   )
@@ -116,7 +116,7 @@ export function HeroView() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#7BB7D1] px-6 py-3 text-sm font-bold text-black transition-colors duration-200 ease-in-out hover:bg-[#8ec4da] sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#ffffff] px-6 py-3 text-sm font-bold text-black transition-colors duration-200 ease-in-out hover:bg-[#e5e5e5] sm:w-auto"
           >
             <Plus className="h-4 w-4" strokeWidth={2.5} />
             Add bot to your server
@@ -129,7 +129,7 @@ export function HeroView() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-[#7BB7D1] bg-transparent px-6 py-3 text-sm font-bold text-[#7BB7D1] transition-colors duration-200 ease-in-out hover:bg-[#7BB7D1]/10 sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-[#ffffff] bg-transparent px-6 py-3 text-sm font-bold text-[#ffffff] transition-colors duration-200 ease-in-out hover:bg-[#ffffff]/10 sm:w-auto"
           >
             Join our support server
             <ArrowRight className="h-4 w-4" strokeWidth={2} />

@@ -52,7 +52,7 @@ export function SpaceBackground() {
       className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#09090b]"
     >
       {/* subtle radial depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-10%,rgba(123,183,209,0.08),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-10%,rgba(255,255,255,0.06),transparent_55%)]" />
 
       {/* drifting particles */}
       {stars.map((star, i) => (
@@ -79,7 +79,7 @@ export function SpaceBackground() {
       {shooters.map((s, i) => (
         <motion.span
           key={`shooter-${i}`}
-          className="absolute h-px w-24 bg-gradient-to-r from-transparent via-[#7BB7D1] to-white"
+          className="absolute h-px w-24 bg-gradient-to-r from-transparent via-[#ffffff] to-white"
           style={{
             top: s.top,
             left: s.left,
